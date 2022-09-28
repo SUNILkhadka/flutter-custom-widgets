@@ -19,3 +19,9 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+linux/
+macos/
+web/
+windows/
+ios/
