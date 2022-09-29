@@ -19,8 +19,13 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: Routes.routesSetting,
       initialRoute: Routes.home,
       theme: ThemeData.dark().copyWith(
-          scaffoldBackgroundColor: AppColor.backgroundshadeblue,
-          appBarTheme: const AppBarTheme(backgroundColor: AppColor.navbar)),
+        scaffoldBackgroundColor: AppColor.backgroundshadeblue,
+        appBarTheme: const AppBarTheme(backgroundColor: AppColor.navbar),
+        textTheme: const TextTheme(
+          bodyText1: TextStyle(color: Colors.black),
+          bodyText2: TextStyle(color: Colors.black),
+        ),
+      ),
     );
   }
 }
