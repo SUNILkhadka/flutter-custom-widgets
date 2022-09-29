@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColor.backgroundshadeblue,
         appBarTheme: const AppBarTheme(backgroundColor: AppColor.navbar),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.purple,
+        ),
         textTheme: const TextTheme(
           bodyText1: TextStyle(color: Colors.black),
           bodyText2: TextStyle(color: Colors.black),

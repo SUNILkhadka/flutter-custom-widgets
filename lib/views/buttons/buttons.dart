@@ -42,11 +42,46 @@ class _ButtonPageState extends State<ButtonPage> {
               textIconButton(onPressed),
               elevatedNormalButton(onPressed),
               elevatedIconButton(onPressed),
-              outlinedButton(onPressed)
+              outlinedButton(onPressed),
+              ButtonBar(
+                buttonHeight: 50,
+                buttonMinWidth: 100,
+                children: [
+                  OutlinedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                          (states) => Colors.purple),
+                    ),
+                    onPressed: onPressed,
+                    child: Text('button1'),
+                  ),
+                  OutlinedButton(
+                    onPressed: onPressed,
+                    style: OutlinedButton.styleFrom(
+                        backgroundColor: Colors.deepOrange),
+                    child: Text('button2'),
+                  ),
+                ],
+              )
             ],
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        enableFeedback: true,
+        onPressed: () {
+          setState(() {
+            containerColor = AppColor.secondaryColor;
+          });
+        },
+        child: Icon(
+          Icons.add,
+          size: 40,
+          color: Colors.white,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      bottomNavigationBar: BottomAppBar(),
     );
   }
 
