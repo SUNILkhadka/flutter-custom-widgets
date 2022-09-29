@@ -8,7 +8,7 @@ The main objective of this application is to deep dive in Flutter Widgets like S
 
 ## Application Screenshots
 
-![image](https://user-images.githubusercontent.com/39978065/193015813-b7697702-4e69-4ea7-a7d9-280f5fd22c42.png)![image](https://user-images.githubusercontent.com/39978065/193016533-9497c595-f7f7-41ff-9b41-66a670c49e2c.png)![image](https://user-images.githubusercontent.com/39978065/193016000-aea95478-c164-4294-91ba-03821f6e03a8.png)
+![image](https://user-images.githubusercontent.com/39978065/193015813-b7697702-4e69-4ea7-a7d9-280f5fd22c42.png)![image](https://user-images.githubusercontent.com/39978065/193030561-7301aeb8-2ba2-4a87-8b4c-c1c6fc9bd87b.png)![image](https://user-images.githubusercontent.com/39978065/193016000-aea95478-c164-4294-91ba-03821f6e03a8.png)
 
 
 A few resources to get you started if this is your first Flutter project:
