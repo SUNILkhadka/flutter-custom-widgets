@@ -1,6 +1,5 @@
-import 'package:custom_components/color.dart';
-import 'package:custom_components/routes.dart';
-import 'package:custom_components/views/buttons.dart';
+import 'package:custom_components/core/color.dart';
+import 'package:custom_components/core/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {

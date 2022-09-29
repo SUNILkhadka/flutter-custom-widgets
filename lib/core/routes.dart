@@ -1,6 +1,6 @@
-import 'package:custom_components/views/buttons.dart';
+import 'package:custom_components/views/buttons/buttons.dart';
 import 'package:custom_components/views/home.dart';
-import 'package:custom_components/views/sliders.dart';
+import 'package:custom_components/views/sliders/sliders.dart';
 import 'package:flutter/material.dart';
 
 class Routes {

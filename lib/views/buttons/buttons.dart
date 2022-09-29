@@ -1,4 +1,4 @@
-import 'package:custom_components/color.dart';
+import 'package:custom_components/core/color.dart';
 import 'package:flutter/material.dart';
 
 class ButtonPage extends StatefulWidget {

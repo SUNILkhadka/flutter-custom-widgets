@@ -1,8 +1,8 @@
 // ignore_for_file: avoid_print
 
-import 'package:custom_components/color.dart';
-import 'package:custom_components/views/customslidertheme.dart';
-import 'package:custom_components/views/utils.dart';
+import 'package:custom_components/core/color.dart';
+import 'package:custom_components/views/sliders/customslidertheme.dart';
+import 'package:custom_components/views/utilities/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

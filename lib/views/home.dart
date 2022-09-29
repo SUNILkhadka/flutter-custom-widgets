@@ -1,6 +1,6 @@
-import 'package:custom_components/color.dart';
-import 'package:custom_components/routes.dart';
-import 'package:custom_components/views/custompainter.dart';
+import 'package:custom_components/core/color.dart';
+import 'package:custom_components/core/routes.dart';
+import 'package:custom_components/views/utilities/custompainter.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

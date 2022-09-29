@@ -1,4 +1,4 @@
-import 'package:custom_components/views/utils.dart';
+import 'package:custom_components/views/utilities/utils.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliderTheme extends StatefulWidget {
@@ -43,7 +43,7 @@ class _CustomSliderThemeState extends State<CustomSliderTheme> {
               margin: const EdgeInsets.symmetric(horizontal: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: Methods.modelBuilder(
+                children: Utilities.modelBuilder(
                   labels,
                   (index, label) {
                     const selectedColor = Colors.black;
