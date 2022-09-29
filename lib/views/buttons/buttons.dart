@@ -43,26 +43,7 @@ class _ButtonPageState extends State<ButtonPage> {
               elevatedNormalButton(onPressed),
               elevatedIconButton(onPressed),
               outlinedButton(onPressed),
-              ButtonBar(
-                buttonHeight: 50,
-                buttonMinWidth: 100,
-                children: [
-                  OutlinedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                          (states) => Colors.purple),
-                    ),
-                    onPressed: onPressed,
-                    child: Text('button1'),
-                  ),
-                  OutlinedButton(
-                    onPressed: onPressed,
-                    style: OutlinedButton.styleFrom(
-                        backgroundColor: Colors.deepOrange),
-                    child: Text('button2'),
-                  ),
-                ],
-              )
+              buttonBar(onPressed)
             ],
           ),
         ),
@@ -74,14 +55,42 @@ class _ButtonPageState extends State<ButtonPage> {
             containerColor = AppColor.secondaryColor;
           });
         },
-        child: Icon(
+        child: const Icon(
           Icons.add,
           size: 40,
           color: Colors.white,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      bottomNavigationBar: BottomAppBar(),
+      bottomNavigationBar: const BottomAppBar(),
+    );
+  }
+
+  ButtonBar buttonBar(onPressed) {
+    return ButtonBar(
+      children: [
+        MaterialButton(
+          color: Colors.yellow,
+          height: 40,
+          minWidth: 50,
+          onPressed: onPressed,
+          splashColor: Colors.black,
+          child: const Text('M Button'),
+        ),
+        OutlinedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                (states) => Colors.purple),
+          ),
+          onPressed: onPressed,
+          child: const Text('button1'),
+        ),
+        OutlinedButton(
+          onPressed: onPressed,
+          style: OutlinedButton.styleFrom(backgroundColor: Colors.deepOrange),
+          child: const Text('button2'),
+        ),
+      ],
     );
   }
 
@@ -182,7 +191,7 @@ class _ButtonPageState extends State<ButtonPage> {
       ),
       style: TextButton.styleFrom(
           fixedSize: buttonSize,
-          side: BorderSide(
+          side: const BorderSide(
             width: 3,
             color: AppColor.primaryColor,
             style: BorderStyle.solid,
