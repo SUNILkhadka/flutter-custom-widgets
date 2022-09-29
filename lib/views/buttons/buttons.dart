@@ -22,47 +22,49 @@ class _ButtonPageState extends State<ButtonPage> {
       });
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Buttons'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(50),
-          height: MediaQuery.of(context).size.height -
-              AppBar().preferredSize.height,
-          width: 400,
-          color: containerColor,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              textNormalButton(onPressed),
-              textIconButton(onPressed),
-              elevatedNormalButton(onPressed),
-              elevatedIconButton(onPressed),
-              outlinedButton(onPressed),
-              buttonBar(onPressed)
-            ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Buttons'),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Container(
+            padding: const EdgeInsets.all(50),
+            height: MediaQuery.of(context).size.height -
+                AppBar().preferredSize.height,
+            width: 400,
+            color: containerColor,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                textNormalButton(onPressed),
+                textIconButton(onPressed),
+                elevatedNormalButton(onPressed),
+                elevatedIconButton(onPressed),
+                outlinedButton(onPressed),
+                buttonBar(onPressed)
+              ],
+            ),
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        enableFeedback: true,
-        onPressed: () {
-          setState(() {
-            containerColor = AppColor.secondaryColor;
-          });
-        },
-        child: const Icon(
-          Icons.add,
-          size: 40,
-          color: Colors.white,
+        floatingActionButton: FloatingActionButton(
+          enableFeedback: true,
+          onPressed: () {
+            setState(() {
+              containerColor = AppColor.secondaryColor;
+            });
+          },
+          child: const Icon(
+            Icons.add,
+            size: 40,
+            color: Colors.white,
+          ),
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        bottomNavigationBar: const BottomAppBar(),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      bottomNavigationBar: const BottomAppBar(),
     );
   }
 
