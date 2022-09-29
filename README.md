@@ -4,7 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The main objective of this application is to deep dive in Flutter Widgets like Sliders, Buttons, Clippers, Custom Clipper Paths, etc.
+
+## Application Screenshots
+
 
 A few resources to get you started if this is your first Flutter project:
 
