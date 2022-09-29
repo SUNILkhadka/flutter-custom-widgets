@@ -1,4 +1,6 @@
-import 'package:custom_components/home_page.dart';
+import 'package:custom_components/color.dart';
+import 'package:custom_components/routes.dart';
+import 'package:custom_components/views/buttons.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Widgets'),
-        ),
-        body: const MyHomePage(),
-      ),
+      onGenerateRoute: Routes.routesSetting,
+      initialRoute: Routes.home,
+      theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: AppColor.backgroundshadeblue,
+          appBarTheme: const AppBarTheme(backgroundColor: AppColor.navbar)),
     );
   }
 }
