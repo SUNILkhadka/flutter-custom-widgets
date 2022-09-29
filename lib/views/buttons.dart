@@ -22,23 +22,29 @@ class _ButtonPageState extends State<ButtonPage> {
       });
     }
 
-    return Center(
-      child: Container(
-        padding: const EdgeInsets.all(50),
-        height:
-            MediaQuery.of(context).size.height - AppBar().preferredSize.height,
-        width: 400,
-        color: containerColor,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            textNormalButton(onPressed),
-            textIconButton(onPressed),
-            elevatedNormalButton(onPressed),
-            elevatedIconButton(onPressed),
-            outlinedButton(onPressed)
-          ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Buttons'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Container(
+          padding: const EdgeInsets.all(50),
+          height: MediaQuery.of(context).size.height -
+              AppBar().preferredSize.height,
+          width: 400,
+          color: containerColor,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              textNormalButton(onPressed),
+              textIconButton(onPressed),
+              elevatedNormalButton(onPressed),
+              elevatedIconButton(onPressed),
+              outlinedButton(onPressed)
+            ],
+          ),
         ),
       ),
     );
